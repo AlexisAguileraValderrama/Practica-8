@@ -1,0 +1,149 @@
+#include <stdio.h>
+#include <conio.h>
+#include <locale.h>
+#include <ctype.h>
+#define p puts
+
+int x;
+
+main(){
+	
+	setlocale(LC_CTYPE, "spanish");
+	
+	p("MENÚ");
+	p("Divisiones");
+	p("A) Norte");
+	p("B) Sur");
+	p("C) Occidente");
+	p("D) Centro");
+	p("Selecciona opcion: ");
+	x=getche();
+	x = toupper(x);
+	p("\n");
+	switch(x){
+		
+		case 'A':
+			p("Division Norte");
+			p("Trabajadores");
+			p("A) Dan");
+			p("B) Tania");
+			p("C) Fernanda");
+			p("Selecciona trabajador: ");
+			x = getche();
+			x = toupper(x);
+			p("\n");
+			switch(x){
+				
+				case 'A':
+					p("Las ventas de Dan fueron: $0");
+				break;
+				
+				case 'B':
+					p("Las ventas de Tania fueron: $478");
+				break;
+				case 'C':
+					p("Las ventas de Fernanda fueron: $110");
+				break;
+				default:
+					p("No hay trabajador");
+				break;
+				
+			}
+			
+			break;
+			
+		case 'B':
+			
+			p("Division Sur");
+			p("Trabajadores");
+			p("A) Arturo");
+			p("B) Yordi");
+			p("C) Kevin");
+			p("Selecciona trabajador: ");
+			x = getche();
+			x = toupper(x);
+			p("\n");
+			switch(x){
+				
+				case 'A':
+					p("Las ventas de Arturo fueron: $0");
+				break;
+				case 'B':
+					p("Las ventas de Yordi fueron: $478");
+				break;
+				case 'C':
+					p("Las ventas de Kevin fueron: -$100");
+				break;
+				default:
+					p("No hay trabajador");
+				break;
+				
+			}
+			break;
+		case 'C':
+			
+			p("Division Occidente");
+			p("Trabajadores");
+			p("A) Ingrid");
+			p("B) Peater");
+			p("C) Eduardo");
+			p("Selecciona trabajador: ");
+			x = getche();
+			x = toupper(x);
+			p("\n");
+			switch(x){
+				
+				case 'A':
+					p("Las ventas de Ingrid fueron: $4532");
+				break;
+				case 'B':
+					p("Las ventas de Peater fueron: $4123");
+				break;
+				case 'C':
+					p("Las ventas de Eduardo fueron: $1510");
+				break;
+				default:
+					p("No hay trabajador");
+				break;
+				
+			}
+			
+			break;
+		case 'D':
+			
+			p("Division Centro");
+			p("Trabajadores");
+			p("A) Gabriel");
+			p("B) Rosio");
+			p("C) Rodrigo");
+			p("Selecciona trabajador: ");
+			x = getche();
+			x = toupper(x);
+			p("\n");
+			switch(x){
+				
+				case 'A':
+					p("Las ventas de Gabriel fueron: $7561");
+				break;
+				case 'B':
+					p("Las ventas de Rosio fueron: $1596");
+				break;
+				case 'C':
+					p("Las ventas de Rodrigo fueron: $7532");
+				break;
+				default:
+					p("No hay trabajador");
+				break;
+				
+			}
+			
+			break;
+		default:
+			p("No existe opción");
+			break;
+		
+	}
+	
+	getch();
+	
+}
