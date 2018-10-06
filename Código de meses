@@ -1,0 +1,54 @@
+#include <stdio.h>
+#include <locale.h>
+#include <stdio.h>
+
+main(){
+ 
+ 	setlocale(LC_CTYPE, "spanish");
+ 
+ 	enum Meses {ENERO, FEBRERO, MARZO, ABRIL, MAYO, JUNIO, JULIO, AGOSTO, SEPTIEMBRE, OCTUBRE, NOVIEMBRE, DICIEMBRE};
+ 	int op;
+ 	printf("Ingrese el mes.\n");
+ 	printf("1) Enero\n");
+ 	printf("2) Febrero\n");
+ 	printf("3) Marzo\n");
+ 	printf("4) Abril\n");
+ 	printf("5) Mayo\n");
+ 	printf("6) Junio\n");
+ 	printf("7) Julio\n");
+ 	printf("8) Agosto\n");
+ 	printf("9) Septiembre\n");
+ 	printf("10) Octubre\n");
+ 	printf("11) Nomviembre\n");
+ 	printf("12) Diciembre\n");
+ 	scanf("%d", &op);
+	
+	switch(op-1){
+ 		case ENERO:
+ 			printf("Seleccionaste Enero.\n");
+ 		break;
+ 		case FEBRERO:
+ 			printf("Seleccionaste Febrero.\n");
+ 		break;
+ 		case MARZO:
+ 			printf("Seleccionaste Marzo.\n");
+ 		break;
+ 		case ABRIL:
+ 			printf("Seleccionaste Abril.\n");
+ 		break;
+ 		case MAYO:
+ 			printf("Seleccionaste Mayo.\n");
+ 		break;
+ 		case JUNIO:
+ 			printf("Seleccionaste Junio.\n");
+ 		break;
+ 		case JULIO:
+ 			printf("Seleccionaste Julio.\n");
+ 		break;
+ 		case AGOSTO:
+ 			printf("Seleccionaste Agosto.\n");
+ 		break;
+ 		case SEPTIEMBRE:
+ 			printf("Seleccionaste Septiembre.\n");
+ 		break;
+ 		case OCTUBRE:
